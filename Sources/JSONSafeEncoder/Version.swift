@@ -14,4 +14,4 @@
 
 // BREAKING.FEATURE.FIX
 
-internal let __jsonsafeencoder_version = "0.9.9"
+internal let __jsonsafeencoder_version = "1.0.0"
