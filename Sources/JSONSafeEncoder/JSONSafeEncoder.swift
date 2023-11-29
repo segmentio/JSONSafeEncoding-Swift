@@ -18,7 +18,6 @@ Copyright (c) 2023 Twilio Inc.
 ---------------------------------------------------------------------------------------------**/
 
 import Foundation
-import CoreFoundation
 
 /// A marker protocol used to determine whether a value is a `String`-keyed `Dictionary`
 /// containing `Encodable` values (in which case it should be exempt from key conversion strategies).
@@ -102,16 +101,16 @@ open class JSONSafeEncoder {
     public enum NonConformingFloatEncodingStrategy {
         /// Throw upon encountering non-conforming values. This is the default strategy.
         case `throw`
-        
+
         /// Set the value to null, like Javascript does.
         case `null`
-        
+
         /// Set the value to zero, the safest option for Swift decoding.
         case zero
 
         /// Encode the values using the given representation strings.
         case convertToString(positiveInfinity: String, negativeInfinity: String, nan: String)
-        
+
         /// Default strings, similar to Python
         static var convertToStringDefaults = NonConformingFloatEncodingStrategy.convertToString(
             positiveInfinity: "Infinity",
