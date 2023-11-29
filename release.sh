@@ -132,4 +132,5 @@ rm $tempFile
 ./build.sh
 
 # upload the release
-gh release upload $newVersion ${PRODUCT_NAME}.xcframework.zip
+gh release upload $newVersion ${PRODUCT_NAME}.zip
+gh release upload $newVersion ${PRODUCT_NAME}.sha256

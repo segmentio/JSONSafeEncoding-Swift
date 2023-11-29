@@ -93,3 +93,5 @@ Package.resolved
 *.xcuserdatad
 /.swiftpm/xcode/xcshareddata
 *.XCFramework
+*.sha256
+*.zip

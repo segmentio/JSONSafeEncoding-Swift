@@ -19,6 +19,6 @@ rm JSONSafeEncoder.sha256
 
 echo "Building XCFrameworks ..."
 
-swift create-xcframework --clean --platform ios --platform macos --platform maccatalyst --platform tvos --platform watchos --stack-evolution
+swift create-xcframework --clean --platform ios --platform macos --platform maccatalyst --platform tvos --platform watchos --stack-evolution --zip
 
 echo "Done."
