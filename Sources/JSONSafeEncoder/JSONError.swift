@@ -19,7 +19,6 @@ Copyright (c) 2023 Twilio Inc.
 
 
 import Foundation
-import CoreFoundation
 
 enum JSONError: Swift.Error, Equatable {
     case cannotConvertInputDataToUTF8

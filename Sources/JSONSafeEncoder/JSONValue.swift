@@ -18,7 +18,6 @@ Copyright (c) 2023 Twilio Inc.
 ---------------------------------------------------------------------------------------------**/
 
 import Foundation
-import CoreFoundation
 
 internal enum JSONValue: Equatable {
     case string(String)
@@ -39,7 +38,7 @@ extension JSONValue {
             return true
         }
     }
-    
+
     var isContainer: Bool {
         switch self {
         case .array, .object:
@@ -101,4 +100,3 @@ private extension JSONValue {
         }
     }
 }
-
