@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PROJECT_NAME="JSONSafeEncoder-Swift"
-PRODUCT_NAME="JSONSafeEncoder"
+PROJECT_NAME="JSONSafeEncoding-Swift"
+PRODUCT_NAME="JSONSafeEncoding"
 
 LOWER_PRODUCT_NAME="$(echo ${PRODUCT_NAME} | tr '[:upper:]' '[:lower:]')"
 

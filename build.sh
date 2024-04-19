@@ -14,8 +14,8 @@ fi
 
 echo "Removing old files ..."
 
-rm JSONSafeEncoder.zip
-rm JSONSafeEncoder.sha256
+rm JSONSafeEncoding.zip
+rm JSONSafeEncoding.sha256
 
 echo "Building XCFrameworks ..."
 
