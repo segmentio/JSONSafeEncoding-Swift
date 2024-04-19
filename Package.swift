@@ -4,26 +4,26 @@
 import PackageDescription
 
 let package = Package(
-    name: "JSONSafeEncoder",
+    name: "JSONSafeEncoding",
     platforms: [
         .macOS("10.15"),
         .iOS("13.0"),
-        .tvOS("11.0"),
+        .tvOS("13.0"),
         .watchOS("7.1")
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "JSONSafeEncoder",
-            targets: ["JSONSafeEncoder"]),
+            name: "JSONSafeEncoding",
+            targets: ["JSONSafeEncoding"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "JSONSafeEncoder"),
+            name: "JSONSafeEncoding"),
         .testTarget(
-            name: "JSONSafeEncoderTests",
-            dependencies: ["JSONSafeEncoder"]),
+            name: "JSONSafeEncodingTests",
+            dependencies: ["JSONSafeEncoding"]),
     ]
 )

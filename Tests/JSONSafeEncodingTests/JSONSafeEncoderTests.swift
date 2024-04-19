@@ -1,5 +1,5 @@
 import XCTest
-@testable import JSONSafeEncoder
+@testable import JSONSafeEncoding
 
 final class JSONSafeEncoderTests: XCTestCase {
     func testRegularEncoding() throws {

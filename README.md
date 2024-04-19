@@ -1,4 +1,4 @@
-# JSONSafeEncoder for Swift
+# JSONSafeEncoding for Swift
 
 This library is a direct copy of JSONEncoder and it's associated types.  It expands upon JSONEncoder's `nonConformingFloatEncodingStrategy` to give developers more options in how to handle NaN / Infinity / -Infinity values.
 
