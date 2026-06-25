@@ -8,9 +8,9 @@ on:
 
 jobs:
   cancel_previous:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-large
     steps:
-    - uses: styfle/cancel-workflow-action@0.9.1
+    - uses: styfle/cancel-workflow-action@a40b8845c0683271d9f53dfcb887a7e181d3918b  # 0.9.1
       with:
         workflow_id: ${{ github.event.workflow.id }}
         
@@ -18,10 +18,10 @@ jobs:
     needs: cancel_previous
     runs-on: macos-latest
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - uses: maxim-lobanov/setup-xcode@ed7a3b1fda3918c0306d1b724322adc0b8cc0a90  # v1
       with:
         xcode-version: latest-stable
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5  # v2
     - name: Build
       run: swift build
     - name: Run tests
@@ -29,12 +29,12 @@ jobs:
 
   build_and_test_spm_linux:
     needs: cancel_previous
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-large
     steps:
-    - uses: swift-actions/setup-swift@v1
+    - uses: swift-actions/setup-swift@cdbe0f7f4c77929b6580e71983e8606e55ffe7e4  # v1
       with:
         swift-version: "5.7"
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5  # v2
     - name: Build
       run: swift build
     - name: Run tests
